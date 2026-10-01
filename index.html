@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pavitr Punetha — Software & Web Developer</title>
+<meta name="description" content="Portfolio of Pavitr Punetha: web developer and B.Tech AI & ML student building secure, thoughtful software.">
+<meta name="color-scheme" content="dark">
+<style>
+:root{--bg:#000;--fg:#f5f5f7;--mute:#86868b;--line:#2a2a2d;--panel:#111113;--accent:#2997ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#f5f5f7}}
+:root[data-theme="dark"]{--bg:#000;--fg:#f5f5f7}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0}
+html,body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+::selection{background:var(--accent);color:#000}
+:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:6px}
+a{color:inherit;text-decoration:none}ul,ol{list-style:none;padding:0}
+h1,h2,h3{letter-spacing:-.045em;font-weight:600}
+.w{display:inline-block;overflow:hidden;padding-bottom:.08em;vertical-align:bottom}.ch{display:inline-block;will-change:transform}
+.h2{font-size:clamp(2.5rem,7vw,6rem);line-height:1}
+section{padding:8rem 1.5rem}
+.wrap{max-width:64rem;margin:0 auto}
+#pl{position:fixed;inset:0;z-index:100;background:#000;display:grid;place-items:center}
+#pl .m{display:flex;flex-direction:column;align-items:center;gap:2rem}
+#pl .bar{width:10rem;height:1px;background:var(--line);overflow:hidden}#pl .bar i{display:block;height:100%;background:var(--fg);transform:scaleX(0);transform-origin:left}
+#hero{height:100svh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;padding:0 1.5rem}
+.orb{position:absolute;left:50%;top:50%;width:60vmin;height:60vmin;margin:-30vmin 0 0 -30vmin;border-radius:50%;background:rgba(41,151,255,.25);filter:blur(120px)}
+.hi{position:relative;will-change:transform}
+.hi h1{font-size:clamp(3rem,11vw,10rem);line-height:.95}
+.sub{color:var(--mute);font-size:clamp(1.1rem,2vw,1.5rem)}
+#about{min-height:100svh;display:grid;place-items:center;position:relative}
+.glow{position:absolute;inset:0;opacity:0;background:radial-gradient(ellipse at 50% 100%,rgba(41,151,255,.18),transparent 60%)}
+.stmt{font-size:clamp(2rem,6vw,5rem);line-height:1.05;font-weight:600;letter-spacing:-.045em;padding:.4rem 0;will-change:transform}
+#work{padding-left:1rem;padding-right:1rem}
+.stack{max-width:72rem;margin:4rem auto 0}
+.card{position:sticky;top:10vh;height:76svh;margin-bottom:10vh}
+.cb{position:relative;display:block;height:100%;overflow:hidden;border-radius:2rem;background:var(--panel);will-change:transform}
+.art{position:absolute;inset:0;will-change:transform}
+.ct{position:relative;height:100%;max-width:36rem;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(1.5rem,4vw,3.5rem)}
+.ct h3{font-size:clamp(2.2rem,5vw,3.8rem)}.ct p{margin-top:1rem;font-size:1.1rem;color:rgba(245,245,247,.7)}
+.tag{width:fit-content;border:1px solid rgba(245,245,247,.2);border-radius:99px;padding:.25rem .8rem;font-size:.85rem;margin-bottom:1rem}
+.tg{margin-top:1.2rem;font-size:.85rem;color:var(--mute)}.go{margin-top:1.2rem;color:var(--accent);transition:transform .3s}.cb:hover .go{transform:translateX(4px)}
+.feed{position:absolute;right:3rem;top:50%;transform:translateY(-50%);width:22rem;font:12px ui-monospace,Menlo,monospace;display:none}
+.feed li{display:flex;gap:.6rem;align-items:center;background:rgba(0,0,0,.4);backdrop-filter:blur(8px);border-radius:.6rem;padding:.55rem .8rem;margin-bottom:.5rem}
+.feed li:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--mute)}.feed li:first-child:before{background:var(--a,var(--accent))}
+@media(min-width:900px){.feed{display:block}}
+.tl{position:relative;padding-left:2.5rem}.tl .ln{position:absolute;left:7px;top:0;bottom:0;width:1px;background:var(--accent);transform-origin:top}
+.ji{position:relative;padding-bottom:4rem}.ji:last-child{padding-bottom:0}
+.ji:before{content:"";position:absolute;left:-2.5rem;top:.5rem;width:15px;height:15px;border-radius:50%;border:2px solid var(--accent);background:var(--bg)}
+.ji small{color:var(--accent);font-size:.9rem}.ji h3{font-size:clamp(1.5rem,3.5vw,2.4rem);margin-top:.2rem;letter-spacing:-.03em}.ji p{color:var(--mute);margin-top:.5rem}
+.sg{display:grid;gap:1.2rem;margin-bottom:3.5rem}@media(min-width:768px){.sg{grid-template-columns:10rem 1fr}.tl{padding-left:4rem}.tl .ln{left:11px}.ji:before{left:-4rem;width:23px;height:23px}}
+.sg h3{font-size:1.5rem;color:var(--mute);letter-spacing:-.02em}.pills{display:flex;flex-wrap:wrap;gap:.75rem}
+.pill{border:1px solid var(--line);border-radius:99px;padding:.6rem 1.2rem;font-size:1.05rem;transition:border-color .3s,color .3s}.pill:hover{border-color:var(--accent);color:var(--accent)}
+#contact{min-height:100svh;display:grid;place-items:center;text-align:center}
+#contact h2{font-size:clamp(3rem,10vw,9rem);line-height:.98}
+.mag{display:inline-block;margin-top:3.5rem}
+.btn{position:relative;display:inline-block;overflow:hidden;border-radius:99px;background:var(--fg);color:#000;padding:1.2rem 2.5rem;font-size:1.1rem;font-weight:500}
+.btn i{position:absolute;inset:0;background:var(--accent);transform:scaleY(0);transform-origin:bottom;transition:transform .5s}.btn:hover i{transform:scaleY(1)}.btn span{position:relative}
+footer{border-top:1px solid var(--line);padding:2.5rem 1.5rem;font-size:.9rem}
+footer .r{max-width:72rem;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;color:var(--mute)}
+footer nav{display:flex;flex-wrap:wrap;gap:2rem}footer a{position:relative;transition:color .3s}footer a:hover{color:var(--fg)}
+footer a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:1px;background:var(--fg);transform:scaleX(0);transform-origin:left;transition:transform .3s}footer a:hover:after{transform:scaleX(1)}
+#prog{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--accent);transform:scaleX(0);transform-origin:left;z-index:90}
+#spot{position:fixed;inset:0;pointer-events:none;z-index:80;background:radial-gradient(520px circle at var(--x,50%) var(--y,40%),rgba(41,151,255,.07),transparent 60%)}
+.rot{display:inline-block;height:1.3em;line-height:1.3;overflow:hidden;vertical-align:bottom;color:var(--fg)}.rt{display:block}.rt b{display:block;height:1.3em;font-weight:500}
+#enquire{padding-bottom:10rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.5rem}.chips p{width:100%;color:var(--mute);margin-bottom:.4rem}
+.chips label{position:relative}.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:.55rem 1.1rem;cursor:pointer;transition:.3s}
+.chips span:hover{border-color:var(--accent)}.chips input:checked+span{background:var(--fg);color:#000;border-color:var(--fg)}.chips input:focus-visible+span{outline:2px solid var(--accent);outline-offset:3px}
+.fld{position:relative;margin-bottom:1rem}
+.fld input,.fld textarea{width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);border-radius:0;color:var(--fg);font:inherit;font-size:1.2rem;padding:1.5rem 0 .6rem;outline:none;transition:border-color .3s;resize:vertical}
+.fld label{position:absolute;left:0;top:1.3rem;color:var(--mute);transition:.25s;pointer-events:none}
+.fld input:focus+label,.fld input:not(:placeholder-shown)+label,.fld textarea:focus+label,.fld textarea:not(:placeholder-shown)+label{top:0;font-size:.8rem;color:var(--accent)}
+.fld input:focus,.fld textarea:focus{border-color:var(--accent)}.fld.bad input,.fld.bad textarea{border-color:#ff453a}
+.fld em{display:block;font-style:normal;color:#ff453a;font-size:.85rem;min-height:1.2rem;margin-top:.3rem}
+.sbtn{border:0;cursor:pointer;font-family:inherit;margin-top:1.5rem}
+#fs{margin-top:1.5rem;color:var(--mute);line-height:1.6}#fs a{color:var(--accent);text-decoration:underline}
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div><div id="spot" aria-hidden="true"></div>
+<div id="pl" role="status" aria-label="Loading"><div class="m">
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#f5f5f7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path id="plp" pathLength="1" stroke-dasharray="1" d="M18 58V14h16a12 12 0 0 1 0 24H18M42 58V30h12a10 10 0 0 1 0 20H42"/></svg>
+<div class="bar"><i></i></div></div></div>
+
+<main>
+<section id="hero"><div class="orb" aria-hidden="true"></div><div class="hi">
+<p class="sub hf" style="margin-bottom:1.5rem">B.Tech AI &amp; ML · New Delhi</p>
+<h1 data-split>Pavitr Punetha</h1>
+<p class="sub hf" style="margin:2rem auto 0;max-width:36rem">Software &amp; web developer. Building secure, thoughtful things.</p>
+<p class="sub hf" style="margin-top:.8rem">Currently <span class="rot"><span class="rt"><b>building a security simulator</b><b>learning AI and ML</b><b>shipping web apps</b><b>building a security simulator</b></span></span></p></div></section>
+
+<section id="about"><div class="glow" aria-hidden="true"></div><div class="wrap" style="position:relative">
+<p class="stmt">I build for the web.</p><p class="stmt">I care about how systems stay secure.</p><p class="stmt">I'm studying AI and machine learning.</p><p class="stmt">I learn by shipping.</p></div></section>
+
+<section id="work"><h2 class="h2 wrap" style="max-width:72rem" data-split>Selected work.</h2>
+<div class="stack">
+<article class="card"><a class="cb" href="https://github.com/bhaskar827" target="_blank" rel="noreferrer" aria-label="CyberSim on GitHub">
+<div class="art" style="background:radial-gradient(120% 90% at 80% 20%,#2997ff66,transparent 60%),linear-gradient(135deg,#0a2540,#050505)"></div>
+<ul class="feed" data-k="sec" aria-hidden="true"></ul>
+<div class="ct"><span class="tag">In development</span><h3>CyberSim</h3><p>A SOC-style security simulator that blends simulated attack telemetry with real machine monitoring. Includes email OTP sign-in and an admin panel.</p><p class="tg">Python, Flask, SQLite, Chart.js, psutil</p><span class="go">View on GitHub</span></div></a></article>
+<article class="card"><a class="cb" href="https://github.com/bhaskar827/student-attendance-system" target="_blank" rel="noreferrer" aria-label="Student Attendance System on GitHub">
+<div class="art" style="background:radial-gradient(120% 90% at 80% 20%,#5e5ce666,transparent 60%),linear-gradient(135deg,#1b1b1f,#050505)"></div>
+<ul class="feed" data-k="att" style="--a:#5e5ce6" aria-hidden="true"></ul>
+<div class="ct"><h3>Student Attendance System</h3><p>A web app for recording, managing and organizing student attendance through a clear, structured interface.</p><p class="tg">Web, SQL</p><span class="go">View on GitHub</span></div></a></article>
+<article class="card"><a class="cb" href="https://github.com/bhaskar827/resumemark" target="_blank" rel="noreferrer" aria-label="ResumeMark on GitHub">
+<div class="art" style="background:radial-gradient(120% 90% at 80% 20%,#30d15866,transparent 60%),linear-gradient(135deg,#14201a,#050505)"></div>
+<ul class="feed" data-k="res" style="--a:#30d158" aria-hidden="true"></ul>
+<div class="ct"><h3>ResumeMark</h3><p>Present and work with professional resume information in a clean, structured format.</p><p class="tg">JavaScript, HTML, CSS</p><span class="go">View on GitHub</span></div></a></article>
+</div></section>
+
+<section id="journey"><div class="wrap" style="max-width:56rem"><h2 class="h2" style="margin-bottom:5rem" data-split>The journey.</h2>
+<ol class="tl" id="tl"><div class="ln" aria-hidden="true"></div>
+<li class="ji"><small>2022</small><h3>Started Advanced Program in Computer Applications</h3><p>Career Quest Solutions, through 2025</p></li>
+<li class="ji"><small>2022</small><h3>Completed NIELIT CCC</h3><p>Computer Concepts</p></li>
+<li class="ji"><small>2023</small><h3>Completed NIELIT CCC Plus</h3><p>Computer Concepts Plus</p></li>
+<li class="ji"><small>2024</small><h3>Oracle Database, graded Excellent</h3><p>Career Quest Solutions</p></li>
+<li class="ji"><small>2024</small><h3>Began B.Tech in AI &amp; ML</h3><p>KCC Institute of Technology, through 2028</p></li>
+<li class="ji"><small>Now</small><h3>Building CyberSim</h3><p>Authentication and security simulation</p></li></ol></div></section>
+
+<section id="skills"><div class="wrap" style="max-width:64rem"><h2 class="h2" style="margin-bottom:4rem" data-split>What I work with.</h2>
+<div class="sg"><h3>Build</h3><ul class="pills"><li class="pill">Python</li><li class="pill">JavaScript</li><li class="pill">React.js</li><li class="pill">Node.js</li><li class="pill">HTML5</li><li class="pill">CSS</li><li class="pill">Bootstrap</li><li class="pill">SQL</li><li class="pill">REST APIs</li><li class="pill">Core Java</li><li class="pill">Hibernate</li><li class="pill">C/C++</li></ul></div>
+<div class="sg"><h3>Secure</h3><ul class="pills"><li class="pill">Authentication</li><li class="pill">Networking basics</li><li class="pill">Cybersecurity concepts</li></ul></div>
+<div class="sg"><h3>Think</h3><ul class="pills"><li class="pill">AI/ML fundamentals</li><li class="pill">Generative AI</li><li class="pill">Prompt engineering</li><li class="pill">Analytics</li><li class="pill">Advanced Excel</li><li class="pill">Tally</li></ul></div></div></section>
+
+<section id="contact"><div><h2><span class="w" style="display:block"><span class="cl" style="display:block">Let's build</span></span><span class="w" style="display:block"><span class="cl" style="display:block">something.</span></span></h2>
+<div class="mag" id="mag"><a class="btn" href="mailto:pavitrapunetha@gmail.com"><i></i><span>pavitrapunetha@gmail.com</span></a></div></div></section>
+<section id="enquire"><div class="wrap" style="max-width:44rem">
+<h2 class="h2" data-split>Send an enquiry.</h2>
+<p class="sub" style="margin:1.2rem 0 3rem">Tell me what you're working on. I'll reply by email.</p>
+<form id="f" action="https://formspree.io/f/mgavqjna" method="POST" novalidate></form>
+<div class="chips" role="radiogroup" aria-labelledby="tp"><p id="tp">What is it about?</p>
+<label><input type="radio" name="topic" value="Internship or job" checked><span>Internship or job</span></label>
+<label><input type="radio" name="topic" value="Project or freelance"><span>Project or freelance</span></label>
+<label><input type="radio" name="topic" value="Collaboration"><span>Collaboration</span></label>
+<label><input type="radio" name="topic" value="Just saying hi"><span>Just saying hi</span></label></div>
+<div class="fld"><input id="fn" name="name" placeholder=" " autocomplete="name" required><label for="fn">Your name</label><em></em></div>
+<div class="fld"><input id="fe" name="email" type="email" placeholder=" " autocomplete="email" required><label for="fe">Your email</label><em></em></div>
+<div class="fld"><textarea id="fm" name="message" rows="5" placeholder=" " required></textarea><label for="fm">Your message</label><em></em></div>
+<button class="btn sbtn" type="submit"><i></i><span>Send enquiry</span></button>
+<p id="fs" role="status" aria-live="polite"></p>
+</form></div></section>
+</main>
+
+<footer><div class="r"><p>© <span id="yr"></span> Pavitr Punetha. Designed and built by me.</p>
+<nav aria-label="Social"><a href="https://github.com/bhaskar827" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/pavitr-punetha-86040a202/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:pavitrapunetha@gmail.com">Email</a><a href="#enquire">Enquire</a><a href="#" id="top">Back to top</a></nav></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+(function(){
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches,lenis=null;
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.querySelectorAll("[data-split]").forEach(function(el){var t=el.textContent;el.setAttribute("aria-label",t);
+el.innerHTML=t.split(" ").map(function(w){return '<span class="w" aria-hidden="true">'+[].slice.call(w).map(function(c){return '<span class="ch">'+c+'</span>'}).join("")+'</span>'}).join(" ")});
+document.getElementById("top").addEventListener("click",function(e){e.preventDefault();lenis?lenis.scrollTo(0):scrollTo({top:0,behavior:"smooth"})});
+// Scroll progress line
+var pg=document.getElementById("prog");addEventListener("scroll",function(){var h=document.documentElement;pg.style.transform="scaleX("+(h.scrollTop/((h.scrollHeight-h.clientHeight)||1))+")"},{passive:true});
+// Enquiry form
+var F = document.getElementById("f");
+
+function chk(id, test, msg) {
+  var el = document.getElementById(id);
+  var p = el.parentNode;
+  var v = el.value.trim();
+  var ok = test(v);
+
+  p.classList.toggle("bad", !ok);
+  p.querySelector("em").textContent = ok ? "" : msg;
+
+  return ok ? v : null;
+}
+
+F.addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  var n = chk(
+    "fn",
+    function(v) { return v.length > 1; },
+    "Please enter your name."
+  );
+
+  var em = chk(
+    "fe",
+    function(v) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    },
+    "Enter a valid email address."
+  );
+
+  var m = chk(
+    "fm",
+    function(v) { return v.length >= 10; },
+    "Write at least a short sentence."
+  );
+
+  if (!n || !em || !m) {
+    var b = F.querySelector(".bad input,.bad textarea");
+    if (b) b.focus();
+    return;
+  }
+
+  var status = document.getElementById("fs");
+  var button = F.querySelector("button[type='submit']");
+
+  button.disabled = true;
+  button.querySelector("span").textContent = "Sending...";
+
+  try {
+    var response = await fetch(F.action, {
+      method: "POST",
+      body: new FormData(F),
+      headers: {
+        "Accept": "application/json"
+      }
+    });
+
+    if (response.ok) {
+      status.innerHTML = "✓ Message sent successfully. I'll get back to you soon.";
+      F.reset();
+
+      setTimeout(function() {
+        status.textContent = "";
+      }, 6000);
+    } else {
+      status.textContent = "Something went wrong. Please try again.";
+    }
+
+  } catch (error) {
+    status.textContent = "Unable to send your message. Please try again.";
+  }
+
+  button.disabled = false;
+  button.querySelector("span").textContent = "Send enquiry";
+});
+var SETS={
+sec:["Failed login · 203.0.113.7","OTP verified · new session","Port scan flagged · 198.51.100.4","CPU spike · process review","Admin action logged","Outbound connection · allowed","Brute-force attempt blocked"],
+att:["Marked present · Class 10-A","Attendance saved","Absent flagged · Roll 24","Weekly report generated","Student added · Class 9-B","Late arrival logged","Register exported · CSV"],
+res:["Profile section updated","Skills block reordered","Template applied · Clean","Resume exported · PDF","Experience entry added","Preview refreshed","Contact details saved"]};
+var feeds=[].slice.call(document.querySelectorAll(".feed")).map(function(el,i){var ev=SETS[el.dataset.k];return{el:el,ev:ev,rows:ev.slice(0,5),n:5,off:i*500}});
+function draw(f){f.el.innerHTML=f.rows.map(function(r,i){return '<li style="opacity:'+(1-i*.17)+'">'+r+'</li>'}).join("")}
+feeds.forEach(function(f){draw(f)});
+if(rm){document.getElementById("pl").remove();return}
+feeds.forEach(function(f){setTimeout(function(){setInterval(function(){f.rows.unshift(f.ev[f.n++%f.ev.length]);f.rows=f.rows.slice(0,5);draw(f)},1600)},f.off)});
+gsap.registerPlugin(ScrollTrigger);
+// Soft spotlight follows the mouse (mouse devices only)
+if(matchMedia("(hover:hover) and (pointer:fine)").matches){var sp=document.getElementById("spot");addEventListener("pointermove",function(e){sp.style.setProperty("--x",e.clientX+"px");sp.style.setProperty("--y",e.clientY+"px")})}
+// Lenis smooth scroll, driven by GSAP's ticker
+lenis=new Lenis({lerp:.09});lenis.on("scroll",ScrollTrigger.update);
+gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
+addEventListener("load",function(){ScrollTrigger.refresh()});
+var mm=gsap.matchMedia();
+mm.add({d:"(min-width: 768px)"},function(ctx){
+ var d=ctx.conditions.d;
+ // Hero: name rises from a mask after the preloader
+ gsap.set("#hero .ch",{yPercent:110});gsap.set(".hf",{opacity:0,y:16});
+ // Preloader: monogram draws, bar fills, curtain lifts, hero starts
+ gsap.timeline().fromTo("#plp",{strokeDashoffset:1},{strokeDashoffset:0,duration:1,ease:"power2.inOut"})
+  .to("#pl .bar i",{scaleX:1,duration:1,ease:"power1.inOut"},0)
+  .to("#pl .m",{opacity:0,y:-12,duration:.35},1.1)
+  .to("#pl",{yPercent:-100,duration:.9,ease:"expo.inOut",onComplete:function(){document.getElementById("pl").remove()}},1.2)
+  .to("#hero .ch",{yPercent:0,duration:1.1,ease:"expo.out",stagger:.035},1.7)
+  .to(".hf",{opacity:1,y:0,duration:.9,stagger:.12},2.1);
+ gsap.to(".orb",{x:60,y:-40,scale:1.15,duration:9,ease:"sine.inOut",yoyo:true,repeat:-1});
+ // Rotating "Currently..." line: slides through three phrases, loops seamlessly
+ var rt=gsap.timeline({repeat:-1,delay:3.4});[1,2,3].forEach(function(i){rt.to(".rt",{yPercent:-25*i,duration:.7,ease:"expo.inOut"},"+=1.8")});rt.set(".rt",{yPercent:0});
+ // Hero exit + orb parallax on scroll
+ gsap.to(".hi",{scale:.92,opacity:0,rotate:1.5,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
+ gsap.to(".orb",{yPercent:30,ease:"none",scrollTrigger:{trigger:"#hero",start:"top top",end:"bottom top",scrub:true}});
+ // About: pinned, each statement lights up in turn (desktop); per-line scrub on mobile
+ var st=gsap.utils.toArray(".stmt");gsap.set(st,{opacity:.15,y:24});
+ if(d){var tl=gsap.timeline({scrollTrigger:{trigger:"#about",start:"top top",end:"+=300%",pin:true,scrub:.6}});
+  tl.to(".glow",{opacity:1,duration:st.length},0);st.forEach(function(l,i){tl.to(l,{opacity:1,y:0,duration:1,ease:"power2.out"},i)})}
+ else st.forEach(function(l){gsap.to(l,{opacity:1,y:0,scrollTrigger:{trigger:l,start:"top 85%",end:"top 55%",scrub:true}})});
+ // Section headings
+ gsap.utils.toArray(".h2").forEach(function(h){var c=h.querySelectorAll(".ch");gsap.set(c,{yPercent:110});
+  gsap.to(c,{yPercent:0,duration:1,ease:"expo.out",stagger:.03,scrollTrigger:{trigger:h,start:"top 80%"}})});
+ // Work: art counter-scale, earlier cards recede as next stacks over
+ var cards=gsap.utils.toArray(".card");
+ cards.forEach(function(c,i){
+  gsap.fromTo(c.querySelector(".art"),{scale:1.15},{scale:1,ease:"none",scrollTrigger:{trigger:c,start:"top bottom",end:"top 20%",scrub:true}});
+  if(i<cards.length-1)gsap.to(c.querySelector(".cb"),{scale:.93,opacity:.45,ease:"none",scrollTrigger:{trigger:cards[i+1],start:"top 85%",end:"top 20%",scrub:true}});
+  var cb=c.querySelector(".cb");
+  cb.addEventListener("mousemove",function(e){var r=cb.getBoundingClientRect();gsap.to(cb,{rotateY:((e.clientX-r.left)/r.width-.5)*6,rotateX:-((e.clientY-r.top)/r.height-.5)*6,duration:.5,transformPerspective:1200})});
+  cb.addEventListener("mouseleave",function(){gsap.to(cb,{rotateX:0,rotateY:0,duration:.8})})});
+ // Journey: line draws, entries slide in
+ gsap.fromTo(".ln",{scaleY:0},{scaleY:1,ease:"none",scrollTrigger:{trigger:"#tl",start:"top 70%",end:"bottom 60%",scrub:true}});
+ gsap.utils.toArray(".ji").forEach(function(el){gsap.from(el,{opacity:0,x:24,duration:.9,ease:"power3.out",scrollTrigger:{trigger:el,start:"top 80%",toggleActions:"play none none reverse"}})});
+ // Skills: pills stagger per group
+ gsap.utils.toArray(".sg").forEach(function(g){gsap.from(g.querySelectorAll(".pill"),{opacity:0,y:14,scale:.96,duration:.7,ease:"power3.out",stagger:.05,scrollTrigger:{trigger:g,start:"top 92%"}})});
+ // Form fields rise in
+ gsap.from("#f .chips,#f .fld,#f .sbtn",{opacity:0,y:20,duration:.8,ease:"power3.out",stagger:.1,scrollTrigger:{trigger:"#f",start:"top 80%"}});
+ // Contact: masked line reveal + magnetic button
+ gsap.from(".cl",{yPercent:110,duration:1.1,ease:"expo.out",stagger:.12,scrollTrigger:{trigger:"#contact",start:"top 60%"}});
+ var mg=document.getElementById("mag");
+ mg.addEventListener("mousemove",function(e){var r=mg.getBoundingClientRect();gsap.to(mg,{x:(e.clientX-r.left-r.width/2)*.35,y:(e.clientY-r.top-r.height/2)*.35,duration:.4,ease:"power3.out"})});
+ mg.addEventListener("mouseleave",function(){gsap.to(mg,{x:0,y:0,duration:.8,ease:"elastic.out(1,0.4)"})});
+});
+})();
+</script>
+</body>
+</html>
