@@ -6,6 +6,7 @@
 <title>Pavitr Punetha — Software & Web Developer</title>
 <meta name="description" content="Portfolio of Pavitr Punetha: web developer and B.Tech AI & ML student building secure, thoughtful software.">
 <meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#000000">
 <style>
 :root{--bg:#000;--fg:#f5f5f7;--mute:#86868b;--line:#2a2a2d;--panel:#111113;--accent:#2997ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--fg:#f5f5f7}}
@@ -78,6 +79,9 @@ footer a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height
 .fld em{display:block;font-style:normal;color:#ff453a;font-size:.85rem;min-height:1.2rem;margin-top:.3rem}
 .sbtn{border:0;cursor:pointer;font-family:inherit;margin-top:1.5rem}
 #fs{margin-top:1.5rem;color:var(--mute);line-height:1.6}#fs a{color:var(--accent);text-decoration:underline}
+html{-webkit-tap-highlight-color:transparent}
+@media(max-width:899px){.feed{display:block;left:1.25rem;right:1.25rem;top:1.25rem;width:auto;transform:none}.feed li{padding:.4rem .7rem;margin-bottom:.35rem}.feed li:nth-child(n+4){display:none}}
+@media(max-width:767px){section{padding:5rem 1.25rem}#work{padding-left:.75rem;padding-right:.75rem}.card{top:6svh;height:84svh;margin-bottom:6vh}.cb{border-radius:1.5rem}.ct h3{font-size:2rem}.ct p{font-size:1rem}.stmt{font-size:clamp(1.8rem,8vw,3rem)}footer .r{flex-direction:column;align-items:flex-start}footer nav{gap:1.25rem}.btn{padding:1rem 1.6rem;font-size:1rem}}
 </style>
 </head>
 <body>
@@ -98,6 +102,10 @@ footer a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height
 
 <section id="work"><h2 class="h2 wrap" style="max-width:72rem" data-split>Selected work.</h2>
 <div class="stack">
+<article class="card"><a class="cb" href="https://github.com/bhaskar827/RiskShieldAI" target="_blank" rel="noreferrer" aria-label="RiskShield AI on GitHub">
+<div class="art" style="background:radial-gradient(120% 90% at 80% 20%,#ff9f0a66,transparent 60%),linear-gradient(135deg,#2a1a05,#050505)"></div>
+<ul class="feed" data-k="risk" style="--a:#ff9f0a" aria-hidden="true"></ul>
+<div class="ct"><span class="tag">Razorpay Buildathon · Track 02</span><h3>RiskShield AI</h3><p>A real-time fraud risk engine for payment events. Each event is scored by a Random Forest model, explained, stored, and pushed to a live dashboard over WebSocket. Razorpay webhook ready.</p><p class="tg">Python, FastAPI, Random Forest, WebSocket, SQLite, Docker</p><span class="go">View on GitHub</span></div></a></article>
 <article class="card"><a class="cb" href="https://github.com/bhaskar827" target="_blank" rel="noreferrer" aria-label="CyberSim on GitHub">
 <div class="art" style="background:radial-gradient(120% 90% at 80% 20%,#2997ff66,transparent 60%),linear-gradient(135deg,#0a2540,#050505)"></div>
 <ul class="feed" data-k="sec" aria-hidden="true"></ul>
@@ -119,12 +127,13 @@ footer a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height
 <li class="ji"><small>2023</small><h3>Completed NIELIT CCC Plus</h3><p>Computer Concepts Plus</p></li>
 <li class="ji"><small>2024</small><h3>Oracle Database, graded Excellent</h3><p>Career Quest Solutions</p></li>
 <li class="ji"><small>2024</small><h3>Began B.Tech in AI &amp; ML</h3><p>KCC Institute of Technology, through 2028</p></li>
+<li class="ji"><small>Recent</small><h3>Built RiskShield AI</h3><p>Real-time fraud risk engine, Razorpay Buildathon Track 02</p></li>
 <li class="ji"><small>Now</small><h3>Building CyberSim</h3><p>Authentication and security simulation</p></li></ol></div></section>
 
 <section id="skills"><div class="wrap" style="max-width:64rem"><h2 class="h2" style="margin-bottom:4rem" data-split>What I work with.</h2>
-<div class="sg"><h3>Build</h3><ul class="pills"><li class="pill">Python</li><li class="pill">JavaScript</li><li class="pill">React.js</li><li class="pill">Node.js</li><li class="pill">HTML5</li><li class="pill">CSS</li><li class="pill">Bootstrap</li><li class="pill">SQL</li><li class="pill">REST APIs</li><li class="pill">Core Java</li><li class="pill">Hibernate</li><li class="pill">C/C++</li></ul></div>
+<div class="sg"><h3>Build</h3><ul class="pills"><li class="pill">Python</li><li class="pill">FastAPI</li><li class="pill">JavaScript</li><li class="pill">React.js</li><li class="pill">Node.js</li><li class="pill">HTML5</li><li class="pill">CSS</li><li class="pill">Bootstrap</li><li class="pill">SQL</li><li class="pill">REST APIs</li><li class="pill">Core Java</li><li class="pill">Hibernate</li><li class="pill">C/C++</li></ul></div>
 <div class="sg"><h3>Secure</h3><ul class="pills"><li class="pill">Authentication</li><li class="pill">Networking basics</li><li class="pill">Cybersecurity concepts</li></ul></div>
-<div class="sg"><h3>Think</h3><ul class="pills"><li class="pill">AI/ML fundamentals</li><li class="pill">Generative AI</li><li class="pill">Prompt engineering</li><li class="pill">Analytics</li><li class="pill">Advanced Excel</li><li class="pill">Tally</li></ul></div></div></section>
+<div class="sg"><h3>Think</h3><ul class="pills"><li class="pill">AI/ML fundamentals</li><li class="pill">Random Forest models</li><li class="pill">Generative AI</li><li class="pill">Prompt engineering</li><li class="pill">Analytics</li><li class="pill">Advanced Excel</li><li class="pill">Tally</li></ul></div></div></section>
 
 <section id="contact"><div><h2><span class="w" style="display:block"><span class="cl" style="display:block">Let's build</span></span><span class="w" style="display:block"><span class="cl" style="display:block">something.</span></span></h2>
 <div class="mag" id="mag"><a class="btn" href="mailto:pavitrapunetha@gmail.com"><i></i><span>pavitrapunetha@gmail.com</span></a></div></div></section>
@@ -153,6 +162,8 @@ footer a:after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
 <script>
 (function(){
+// Your Formspree form URL (public by design). Clear it to fall back to the email-app method.
+var FORM_ENDPOINT="https://formspree.io/f/mgavqjna";
 var rm=matchMedia("(prefers-reduced-motion: reduce)").matches,lenis=null;
 document.getElementById("yr").textContent=new Date().getFullYear();
 document.querySelectorAll("[data-split]").forEach(function(el){var t=el.textContent;el.setAttribute("aria-label",t);
@@ -160,91 +171,35 @@ el.innerHTML=t.split(" ").map(function(w){return '<span class="w" aria-hidden="t
 document.getElementById("top").addEventListener("click",function(e){e.preventDefault();lenis?lenis.scrollTo(0):scrollTo({top:0,behavior:"smooth"})});
 // Scroll progress line
 var pg=document.getElementById("prog");addEventListener("scroll",function(){var h=document.documentElement;pg.style.transform="scaleX("+(h.scrollTop/((h.scrollHeight-h.clientHeight)||1))+")"},{passive:true});
-// Enquiry form
-var F = document.getElementById("f");
-
-function chk(id, test, msg) {
-  var el = document.getElementById(id);
-  var p = el.parentNode;
-  var v = el.value.trim();
-  var ok = test(v);
-
-  p.classList.toggle("bad", !ok);
-  p.querySelector("em").textContent = ok ? "" : msg;
-
-  return ok ? v : null;
-}
-
-F.addEventListener("submit", async function(e) {
-  e.preventDefault();
-
-  var n = chk(
-    "fn",
-    function(v) { return v.length > 1; },
-    "Please enter your name."
-  );
-
-  var em = chk(
-    "fe",
-    function(v) {
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
-    },
-    "Enter a valid email address."
-  );
-
-  var m = chk(
-    "fm",
-    function(v) { return v.length >= 10; },
-    "Write at least a short sentence."
-  );
-
-  if (!n || !em || !m) {
-    var b = F.querySelector(".bad input,.bad textarea");
-    if (b) b.focus();
-    return;
-  }
-
-  var status = document.getElementById("fs");
-  var button = F.querySelector("button[type='submit']");
-
-  button.disabled = true;
-  button.querySelector("span").textContent = "Sending...";
-
-  try {
-    var response = await fetch(F.action, {
-      method: "POST",
-      body: new FormData(F),
-      headers: {
-        "Accept": "application/json"
-      }
-    });
-
-    if (response.ok) {
-      status.innerHTML = "✓ Message sent successfully. I'll get back to you soon.";
-      F.reset();
-
-      setTimeout(function() {
-        status.textContent = "";
-      }, 6000);
-    } else {
-      status.textContent = "Something went wrong. Please try again.";
-    }
-
-  } catch (error) {
-    status.textContent = "Unable to send your message. Please try again.";
-  }
-
-  button.disabled = false;
-  button.querySelector("span").textContent = "Send enquiry";
-});
+// Enquiry form: validates, then opens a ready-to-send email (a published page cannot post to a server)
+var F=document.getElementById("f");
+function chk(id,test,msg){var el=document.getElementById(id),p=el.parentNode,v=el.value.trim(),ok=test(v);p.classList.toggle("bad",!ok);p.querySelector("em").textContent=ok?"":msg;return ok?v:null}
+F.addEventListener("submit",function(e){e.preventDefault();
+ var n=chk("fn",function(v){return v.length>1},"Please enter your name."),
+ em=chk("fe",function(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)},"Enter a valid email address."),
+ m=chk("fm",function(v){return v.length>=10},"Write at least a short sentence.");
+ if(!n||!em||!m){var b=F.querySelector(".bad input,.bad textarea");if(b)b.focus();return}
+ var t=F.querySelector("input[name=topic]:checked").value,su=encodeURIComponent("[Portfolio] "+t+" · "+n),bo=encodeURIComponent(m+"\n\n— "+n+" ("+em+")"),
+ mail="mailto:pavitrapunetha@gmail.com?subject="+su+"&body="+bo,gm="https://mail.google.com/mail/?view=cm&to=pavitrapunetha@gmail.com&su="+su+"&body="+bo;
+ var fs=document.getElementById("fs"),alt='Open the message <a href="'+mail+'">in your email app</a> or <a href="'+gm+'" target="_blank" rel="noreferrer">in Gmail</a>, or write to pavitrapunetha@gmail.com.';
+ var btn=F.querySelector("button[type=submit]"),bl=btn.querySelector("span");
+ if(FORM_ENDPOINT){btn.disabled=true;bl.textContent="Sending...";fs.textContent="";
+  fetch(FORM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({_subject:"[Portfolio] "+t+" · "+n,topic:t,name:n,email:em,message:m})})
+  .then(function(r){if(!r.ok)throw 0;F.reset();fs.textContent="✓ Message sent successfully. I'll get back to you soon."})
+  .catch(function(){fs.innerHTML="Could not send it from here. "+alt})
+  .then(function(){btn.disabled=false;bl.textContent="Send enquiry"});return}
+ fs.innerHTML="Message ready. "+alt+" Then press send.";
+ location.href=mail});
 var SETS={
 sec:["Failed login · 203.0.113.7","OTP verified · new session","Port scan flagged · 198.51.100.4","CPU spike · process review","Admin action logged","Outbound connection · allowed","Brute-force attempt blocked"],
 att:["Marked present · Class 10-A","Attendance saved","Absent flagged · Roll 24","Weekly report generated","Student added · Class 9-B","Late arrival logged","Register exported · CSV"],
+risk:["Payment captured · low risk","Payment failed · sent to review","Razorpay signature verified","Duplicate event ignored","High-risk payment · hold","Demo event scored","Alert raised · analyst queue"],
 res:["Profile section updated","Skills block reordered","Template applied · Clean","Resume exported · PDF","Experience entry added","Preview refreshed","Contact details saved"]};
 var feeds=[].slice.call(document.querySelectorAll(".feed")).map(function(el,i){var ev=SETS[el.dataset.k];return{el:el,ev:ev,rows:ev.slice(0,5),n:5,off:i*500}});
 function draw(f){f.el.innerHTML=f.rows.map(function(r,i){return '<li style="opacity:'+(1-i*.17)+'">'+r+'</li>'}).join("")}
 feeds.forEach(function(f){draw(f)});
-if(rm){document.getElementById("pl").remove();return}
+if(rm||!window.gsap||!window.Lenis||!window.ScrollTrigger){document.getElementById("pl").remove();return}
+setTimeout(function(){var p=document.getElementById("pl");if(p)p.remove()},7000);
 feeds.forEach(function(f){setTimeout(function(){setInterval(function(){f.rows.unshift(f.ev[f.n++%f.ev.length]);f.rows=f.rows.slice(0,5);draw(f)},1600)},f.off)});
 gsap.registerPlugin(ScrollTrigger);
 // Soft spotlight follows the mouse (mouse devices only)
@@ -254,7 +209,7 @@ lenis=new Lenis({lerp:.09});lenis.on("scroll",ScrollTrigger.update);
 gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
 addEventListener("load",function(){ScrollTrigger.refresh()});
 var mm=gsap.matchMedia();
-mm.add({d:"(min-width: 768px)"},function(ctx){
+mm.add({d:"(min-width: 768px)",m:"(max-width: 767px)"},function(ctx){
  var d=ctx.conditions.d;
  // Hero: name rises from a mask after the preloader
  gsap.set("#hero .ch",{yPercent:110});gsap.set(".hf",{opacity:0,y:16});
